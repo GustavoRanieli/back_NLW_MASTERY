@@ -1,0 +1,30 @@
+# Nome da requisição:
+# @name get-prompst
+GET  http://localhost:3333/prompts
+
+# Separador obrigatório das requisições:
+###
+
+# @name upload-video
+POST   http://localhost:3333/video
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="video"; filename="test.mp3"
+Content-Type: audio/mpeg
+
+< ./test.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+###
+
+# Nome da requisição:
+# @name transcription-video
+POST  http://localhost:3333/videos/2be1bcb4-742c-4308-8741-91c9f1fd6f07/transcription
+Content-Type: application/json
+
+{
+    "prompt": "bom dia, video de bom dia, whatsapp"
+}

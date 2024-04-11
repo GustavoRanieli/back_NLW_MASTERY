@@ -1,0 +1,26 @@
+{
+  "name": "nlw-mastery-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "author": "Gustavo Ranieli Lemes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5",
+    "prisma": "^5.12.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^8.2.0",
+    "@prisma/client": "^5.12.1",
+    "fastify": "^4.26.2",
+    "openai": "^4.33.0",
+    "zod": "^3.22.4"
+  }
+}
